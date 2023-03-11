@@ -1008,42 +1008,42 @@ a.text-reset:hover {
 }
 
 .small-gallery .img-1 {
-    background-image: url(img/xgallery-1.jpg);
+    background-image: url(img/x-gallery-1.jpeg);
     background-size: cover;
 }
 
 .small-gallery .img-2 {
-    background-image: url(img/xgallery-2.jpg);
+    background-image: url(img/x-gallery-2.jpeg);
     background-size: cover;
 }
 
 .small-gallery .img-3 {
-    background-image: url(img/xgallery-3.jpg);
+    background-image: url(img/x-gallery-3.jpeg);
     background-size: cover;
 }
 
 .small-gallery .img-4 {
-    background-image: url(img/xgallery-4.jpg);
+    background-image: url(img/x-gallery-4.jpeg);
     background-size: cover;
 }
 
 .small-gallery .img-5 {
-    background-image: url(img/xgallery-5.jpg);
+    background-image: url(img/x-gallery-5.jpeg);
     background-size: cover;
 }
 
 .small-gallery .img-6 {
-    background-image: url(img/xgallery-6.jpg);
+    background-image: url(img/x-gallery-6.jpeg);
     background-size: cover;
 }
 
 .small-gallery .img-7 {
-    background-image: url(img/xgallery-7.jpg);
+    background-image: url(img/x-gallery-7.jpeg);
     background-size: cover;
 }
 
 .small-gallery .img-8 {
-    background-image: url(img/xgallery-8.jpg);
+    background-image: url(img/x-gallery-8.jpeg);
     background-size: cover;
 }
 
@@ -1053,8 +1053,14 @@ a.text-reset:hover {
     text-align: center;
 }
 
+.footer-grid .small-gallery > * {
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
 /* Small <768px */
 @media (max-width: 767px)  {
+
     .footer-grid {
         display: block;
         text-align: center;
@@ -1067,5 +1073,22 @@ a.text-reset:hover {
 
     .small-gallery {
         margin-top: 3rem;
+    }
+
+    .footer-grid .small-gallery {
+        padding: 1rem;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Big >=768px */
+@media (min-width: 768px) {
+
+    .footer-grid .small-gallery > *:hover {
+        transform: scale(5);
+        transform-origin: bottom right;
+        z-index: 1000;
+        box-shadow: 0 0 16px 8px #0005;
     }
 }
