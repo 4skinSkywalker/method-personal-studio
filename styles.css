@@ -180,6 +180,11 @@ a.text-reset:hover {
     font-size: 5rem;
 }
 
+.nav-logo {
+    width: 100%;
+    height: auto;
+}
+
 /* Small <768px */
 @media (max-width: 767px)  {
     .nav-grid {
