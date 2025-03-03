@@ -259,13 +259,11 @@ a.text-reset:hover {
     z-index: -2;
 }
 
-#intro-section .stroked-text {
-    color: #0000;
+#intro-section .big-fading-text {
+    color: #f2932533;
     font-size: 10rem;
     line-height: 8rem;
     position: absolute;
-    -webkit-text-stroke-width: 0.033333rem;
-    -webkit-text-stroke-color: #f2932555;
     z-index: -1;
 }
 
@@ -310,7 +308,7 @@ a.text-reset:hover {
         padding: 6.5rem 3%;
     }
 
-    #intro-section .stroked-text {
+    #intro-section .big-fading-text {
         font-size: 4rem;
         line-height: 3.2rem;
     }
